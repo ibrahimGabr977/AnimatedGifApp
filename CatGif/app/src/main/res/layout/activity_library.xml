@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.giflibrary.LibraryActivity"
+    android:background="@color/main_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/libraryRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="7dp"/>
+
+
+    <ImageView
+        android:id="@+id/library_gif_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/libraryRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/libraryRecyclerView"
+        app:layout_constraintTop_toBottomOf="@id/libraryRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="75dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/library_no_gif_to_show_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/libraryRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/libraryRecyclerView"
+        app:layout_constraintTop_toBottomOf="@id/libraryRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="75dp"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:textColor="#9CA3AE"
+        android:text="@string/no_gif_to_show"
+        android:gravity="center"
+        android:paddingHorizontal="31dp"
+        android:fontFamily="monospace"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/library_gif_sign_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/library_gif_view"
+        app:layout_constraintEnd_toEndOf="@id/library_gif_view"
+        app:layout_constraintTop_toTopOf="@id/library_gif_view"
+        app:layout_constraintBottom_toBottomOf="@id/library_gif_view"
+        android:importantForAccessibility="no"
+        android:src="@drawable/z_gif_signd_large"
+        android:background="@drawable/z_gif_signbg"
+        android:padding="3.5dp"
+        android:visibility="gone"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

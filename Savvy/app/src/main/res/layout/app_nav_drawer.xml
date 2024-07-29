@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textDirection="ltr"
+    android:layoutDirection="ltr"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="start"
+    android:background="@android:color/transparent"
+    tools:viewBindingIgnore="true"
+    >
+
+    <View
+        android:id="@+id/nav_dummy_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/nav_view_container"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_view_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintWidth_percent="0.71"
+        android:background="@color/darker_color"
+        >
+
+
+        <ImageView
+            android:id="@+id/nav_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/z_app_cover"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            app:layout_constraintHeight_percent="0.29"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="19dp"
+            android:contentDescription="@string/content_description_poster_image"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/nav_image"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nav_image"
+            app:layout_constraintWidth_percent="0.231"
+            android:elevation="50dp"
+            android:src="@drawable/z_app_icon1"
+            />
+
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:background="@color/darker_color"
+            android:fitsSystemWindows="true"
+            android:paddingHorizontal="25dp"
+            app:elevation="0dp"
+            app:itemHorizontalPadding="0dp"
+            app:itemIconSize="23dp"
+            app:itemTextAppearance="@style/CustomNavTextStyle"
+            app:itemTextColor="@color/white_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image3"
+            app:layout_constraintVertical_bias="0.0"
+            app:menu="@menu/nav_drawer_menu"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkest_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:paddingVertical="15dp">
+
+
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:drawablePadding="3dp"
+        android:fontFamily="casual"
+        android:text="@string/app_content_control"
+        android:textColor="@color/white_color"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/select_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dialogs_margin"
+        android:layout_marginTop="11dp"
+        android:fontFamily="serif"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="7dp"
+        android:paddingHorizontal="5dp"
+        android:text="@string/select_content"
+        android:textColor="#B0E0E0E2"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/contentsFlowLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dialogs_margin"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/s_set_category_background"
+        android:padding="15dp"
+        app:constraint_referenced_ids="content_funny,content_cutie,content_kittens,content_animals,content_sports,content_others"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="13dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalGap="13dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_content"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <LinearLayout
+        android:id="@+id/content_funny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/funny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_funny"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_funnyd" />
+
+        <ImageView
+            android:id="@+id/add_funny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_cutie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/cutie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_cutie"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_cutied" />
+
+        <ImageView
+            android:id="@+id/add_cutie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_kittens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/kittens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_kittens"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_catsd" />
+
+        <ImageView
+            android:id="@+id/add_kittens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_animals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_animals"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_animalsd" />
+
+        <ImageView
+            android:id="@+id/add_animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/content_soccer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/a_welcome_skipbg"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingHorizontal="13dp"-->
+<!--        android:paddingVertical="3dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawablePadding="3dp"-->
+<!--            android:fontFamily="casual"-->
+<!--            android:gravity="center"-->
+<!--            android:letterSpacing="0.15"-->
+<!--            android:text="@string/content_soccer"-->
+<!--            android:textColor="@color/white_color"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:drawableEndCompat="@drawable/z_vertical_white_lined"-->
+<!--            app:drawableStartCompat="@drawable/b_main_tag_soccerd" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/add_soccer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:background="?android:attr/selectableItemBackground"-->
+<!--            android:clickable="true"-->
+<!--            android:contentDescription="@string/content_description_back"-->
+<!--            android:focusable="true"-->
+<!--            android:padding="3dp"-->
+<!--            android:src="@drawable/s_select_category_addd" />-->
+
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/content_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_sports"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_sportsd" />
+
+        <ImageView
+            android:id="@+id/add_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_welcome_skipbg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="3dp">
+
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/content_others"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/z_vertical_white_lined"
+            app:drawableStartCompat="@drawable/b_main_tag_others" />
+
+        <ImageView
+            android:id="@+id/add_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_back"
+            android:focusable="true"
+            android:padding="3dp"
+            android:src="@drawable/s_select_category_addd" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/set_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="35dp"
+        android:layout_weight="0"
+        android:background="@drawable/s_select_category_setbg"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingVertical="9dp"
+        android:shadowColor="@color/blue_light_color"
+        android:shadowDx="2.1"
+        android:shadowDy="2.1"
+        android:shadowRadius="1.6"
+        android:text="@string/set_app_content"
+        android:textColor="@color/white_color"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/cancel"
+        app:layout_constraintEnd_toEndOf="@id/contentsFlowLayout"
+        app:layout_constraintTop_toBottomOf="@id/contentsFlowLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginStart="17dp"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/s_set_category_skipbg"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingVertical="9dp"
+        android:shadowColor="@color/blue_light_color"
+        android:shadowDx="2.1"
+        android:shadowDy="2.1"
+        android:shadowRadius="1.6"
+        android:text="@string/report_post_cancel"
+        android:textColor="@color/white_color"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="@id/set_content"
+        app:layout_constraintEnd_toStartOf="@id/set_content"
+        app:layout_constraintStart_toStartOf="@id/contentsFlowLayout"
+        app:layout_constraintTop_toTopOf="@id/set_content"
+        android:layout_marginEnd="17dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

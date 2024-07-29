@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">CatGif</string>
+    <string name="app_signature">CatGif</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="select_media_type">Please select the media type to generate the gif......</string>
+
+
+    <string name="nav_library">Gif Library</string>
+    <string name="nav_player">Gif Player</string>
+    <string name="nav_compressor">Gif Compressor</string>
+    <string name="nav_store">Gif Store</string>
+    <string name="nav_review_us">Review us</string>
+    <string name="nav_help">Help</string>
+
+
+    <string name="briefly_version">Briefly version</string>
+    <string name="default_version">Default version</string>
+    <string name="add_image">Add image</string>
+    <string name="library">Library</string>
+
+    <!--progress words-->
+    <string name="cancel">Cancel</string>
+    <string name="preparing">Preparing…</string>
+    <string name="generating">Generating…</string>
+    <string name="extracting">Extracting…</string>
+
+
+    <!--=================================================dialogs' strings======================================================= -->
+
+
+    <string name="app_help_title">Welcome to KittenGif!!</string>
+
+    <string name="app_help_body">This free offline tool for making Gif from either images or video.
+        You can select either images or a video to generate a gif. If you select a video you can then specify
+        the length of the generated gif and the size by select the version. You can also use a GifPlayer to play your own GIFs.
+        &lt;br /&gt;-Please don\'t forget to review us on GooglePlay</string>
+
+
+    <string name="select_activity_help_title">Select to start!!</string>
+
+    <string name="select_activity_help_body">You can select either a video or images from gallery to generate a gif.
+        Just click, open gallery, select media and that\'s it!!</string>
+
+
+    <string name="generate_activity_help_title">One click to generate!!</string>
+
+
+    <string name="generate_images_activity_help_body">Please click the below button to generate an awesome gif.
+        Remember that it may take some time to finish depending on the number of images you selected.
+        You can also add image/s, delete image and change images order.</string>
+
+
+    <string name="generate_video_activity_help_body">Please click the below button to generate an awesome gif.
+        Remember that it may take some time to finish depending on the duration of your selected video.
+        \nThe generation version controls the generated gif size and duration,
+        please click beside a version to get more information.</string>
+
+
+    <string name="generate_video_activity_default_version">Recommended for short videos because it
+        has normal size, normal duration, video details are more clarified in the generated gif.</string>
+
+    <string name="generate_video_activity_briefly_version">Recommended for extreme long videos because it
+        has light size, short duration, video details are more summarized and briefed in the generated gif.</string>
+
+
+    <string name="library_activity_help_title">Successfully generated the GIF!!</string>
+    <string name="library_activity_help_body">Thank you for using our gif tool. If you like it please review us now</string>
+    <string name="no_gif_to_show">No GIFs to show, please click above to generate some</string>
+    <string name="all">All</string>
+    <string name="funny">Funny</string>
+    <string name="tab_cute">Cute</string>
+    <string name="tab_top">Top</string>
+    <string name="gif_details">Gif Details</string>
+    <string name="saving">Saving...</string>
+
+
+    <!-- ========================================================================================================================= -->
+
+
+</resources>

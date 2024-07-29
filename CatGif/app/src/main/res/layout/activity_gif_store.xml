@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.gifstore.GifStoreActivity"
+    android:background="@color/main_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+
+    <ImageView
+        android:id="@+id/store_back_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/storeRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line1"
+        android:src="@drawable/store_backd"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/store_back_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/store_back_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/store_back_image_btn"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="@string/nav_store"
+        app:layout_constraintHorizontal_bias="0.11"
+        android:fontFamily="monospace"/>
+
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        android:background="@color/white_color"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/customTabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/storeRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/storeRecyclerView"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/store_tab_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/main_darker_color"
+            android:text="@string/all"
+            android:gravity="center"
+            android:background="@drawable/z_selected_tabbg"
+            android:paddingVertical="3dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="9dp"
+            android:fontFamily="monospace"
+            />
+
+
+        <TextView
+            android:id="@+id/store_tab_funny"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"
+            android:text="@string/funny"
+            android:gravity="center"
+            android:background="@drawable/z_tablayoutbg"
+            android:paddingVertical="3dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="9dp"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:id="@+id/store_tab_cute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"
+            android:text="@string/tab_cute"
+            android:gravity="center"
+            android:background="@drawable/z_tablayoutbg"
+            android:paddingVertical="3dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="9dp"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/store_tab_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"
+            android:text="@string/tab_top"
+            android:gravity="center"
+            android:background="@drawable/z_tablayoutbg"
+            android:paddingVertical="3dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"/>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/storeRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customTabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintWidth_percent="0.93"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

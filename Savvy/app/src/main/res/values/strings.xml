@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Savvy</string>
+
+
+    <string name="welcome_content_description_next_page">Next</string>
+    <string name="content_description_skip_welcoming">Skip welcome introduction</string>
+    <string name="get_started">Let\'s Go</string>
+    <string name="welcome_page1_title">Welcome to Savvy!!</string>
+    <string name="welcome_page1_content">Welcome to our social family. We are very glad that you decided to be one of our community.</string>
+    <string name="welcome_page2_title">Owned Only By You!!</string>
+    <string name="welcome_page2_content">Savvy is the first social application that make your time owned only by you, which allow you to even setting the whole application content as you want.</string>
+    <string name="welcome_page3_title">Totally Controlled By You!!</string>
+    <string name="welcome_page3_content">Savvy also give you the ability to: restrict usage time, control ads, enable downloading to your posts, create account without any personal info and so on.</string>
+    <string name="welcome_page4_title">Share Moments!!</string>
+    <string name="welcome_page4_content">Explore and share your wonderful moments in a safe community with very strict rules, no personal data shared and everything reviewed before published.</string>
+    <string name="welcome_page5_title">Let\'s explore Savvy!!</string>
+    <string name="welcome_page5_content">It\'s time to start your journey. We glad to listen to your suggestions and your reports anytime.</string>
+
+
+
+
+
+    <string name="content_description_post_image_view">Gif post view</string>
+    <string name="download">Download</string>
+    <string name="boomark">Bookmark</string>
+
+    <string name="filter_all">All</string>
+    <string name="filter_trending">Trending</string>
+
+    <string name="content_funny">Funny</string>
+    <string name="content_sports">Sports</string>
+    <string name="content_soccer">Soccer</string>
+    <string name="content_animals">Animals</string>
+    <string name="content_others">Others</string>
+    <string name="content_cutie">Cutie</string>
+    <string name="content_kittens">Kittens</string>
+
+    <string name="auto_scrolling">Auto scrolling</string>
+
+    <string name="content_description_main_menu">Main screen menu</string>
+    <string name="Welcome">Welcome</string>
+
+
+    <string name="report_post_title">Report post</string>
+    <string name="report_post_nudity">Nudity or sexual content</string>
+    <string name="report_post_violence">Violent or graphic content</string>
+    <string name="report_post_hateful">Hateful or abusive content</string>
+    <string name="report_post_harmful">Dangerous or harmful content</string>
+    <string name="report_post_spam">Spam or misleading content</string>
+    <string name="report_post_ip">Infringes my intellectual property rights</string>
+    <string name="report_post_other">Other</string>
+    <string name="report_post_additional_info">Additional information (optional)</string>
+    <string name="report_post_additional_info_character_count">%d/200</string>
+    <string name="report_post_cancel">Cancel</string>
+    <string name="report_post_report">Report</string>
+    <string name="content_description_report">report this post</string>
+    <string name="success_reporting">Thank you for reporting, we are investigating it promptly.</string>
+
+
+    <string name="content_description_no_internet">No internet connection view</string>
+    <string name="whoops">Whoops!</string>
+    <string name="problem_on_your_network">There seems to be a problem with your Network Connection</string>
+    <string name="try_again">Try Again</string>
+    <string name="offline_assets">Assets</string>
+    <string name="favorites">Favorites</string>
+    <string name="review_us">Review us</string>
+    <string name="content_description_follow_facebook">Follow us on Facebook</string>
+    <string name="content_description_follow_twitter">Follow us on Twitter</string>
+    <string name="content_description_follow_instagram">Follow us on Instagram</string>
+    <string name="content_description_follow_tiktok">Follow us on TikTok</string>
+    <string name="follow_us">FOLLOW US</string>
+    <string name="content_description_fast_swipe">Fast swiping throw posts</string>
+    <string name="content_description_download">Download post to mobile storage</string>
+    <string name="content_description_add_favorite">Add post to favorite</string>
+    <string name="content_description_share">Share post</string>
+    <string name="content_description_poster_image">Post owner profile picture</string>
+    <string name="test_poster_name">Football Time</string>
+    <string name="test_post_time">2 min ago</string>
+    <string name="content_description_like">Like the post</string>
+    <string name="likes">Likes</string>
+    <string name="downloads">Downloads</string>
+    <string name="zero">0</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="tiktok">Tiktok</string>
+    <string name="profile">Profile</string>
+    <string name="tell_friend">Tell a friend</string>
+    <string name="help">Help</string>
+
+    <string name="support_us">SUPPORT US</string>
+    <string name="content_description_back">Back to main screen</string>
+    <string name="no_favorites">No favorite posts to show!</string>
+
+
+
+
+
+
+<!--    <string name="banner_ad_id1">ca-app-pub-1155104911325440/9424139190</string>-->
+<!--    <string name="banner_ad_id2">ca-app-pub-1155104911325440/4171812518</string>-->
+<!--    <string name="banner_ad_id3">ca-app-pub-1155104911325440/4531685411</string>-->
+<!--    <string name="banner_ad_id4">ca-app-pub-1155104911325440/9232567509</string>-->
+<!--    <string name="banner_ad_id5">ca-app-pub-1155104911325440/7919485838</string>-->
+<!--    <string name="interstitial_ad_id1">ca-app-pub-1155104911325440/9040995818</string>-->
+
+
+    <string name="banner_ad_id1">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id2">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id3">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id4">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id5">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="interstitial_ad_id1">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_to_gifme">Welcome to GifMe</string>
+    <string name="select_content">Please set the application content by selecting from below. (You can change that later)</string>
+    <string name="funny_content"><![CDATA[Funny & Comedy]]></string>
+    <string name="cutie_content"><![CDATA[Cutie & Beauty]]></string>
+    <string name="kittens_content"><![CDATA[Cats & Kittens]]></string>
+    <string name="animals_content"><![CDATA[Animals & Wildlife]]></string>
+    <string name="sports_content"><![CDATA[Sports & Workouts]]></string>
+    <string name="set_app_content">Set selected</string>
+    <string name="skip_app_content">No restrictions</string>
+    <string name="others_content">All others</string>
+    <string name="edit_app_content">Edit app content</string>
+    <string name="_0">0</string>
+    <string name="app_content_control">Savvy Content Controller</string>
+    <string name="close">Close</string>
+    <string name="ignore">Ignore</string>
+
+
+
+    <string name="login_name">Name</string>
+    <string name="signup_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="or">Or</string>
+    <string name="create_anonymous_account">Sign Up as anonymous</string>
+    <string name="signup_google">Sign Up with Google</string>
+    <string name="signin_google">Sign In with Google</string>
+
+
+
+    <string name="sign_in">Sign In</string>
+    <string name="have_account">Already have account?</string>
+
+    <string name="content_description_create_anonymous">Create an anonymous account</string>
+    <string name="content_description_login_google">Login with google</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin_email">Email or Username</string>
+    <string name="content_description_password_visibility">Show password or not</string>
+    <string name="invalid_email">Please enter a valid email address then try again.</string>
+    <string name="invalid_password">Please use a valid password with min length 5 and try again.</string>
+
+
+</resources>

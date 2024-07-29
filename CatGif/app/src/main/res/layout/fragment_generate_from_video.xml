@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_darker_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+
+
+
+
+
+    <VideoView
+        android:id="@+id/generate_video_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/generate_video_image_btn"
+        app:layout_constraintHeight_percent="0.57"
+        app:layout_constraintVertical_bias="0"
+        android:scaleType="fitXY"
+        app:layout_constraintWidth_percent="0.95"
+        android:layout_marginTop="7dp"
+        />
+
+
+
+    <RadioGroup
+        android:id="@+id/generate_video_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/generate_video_reverse"
+        app:layout_constraintEnd_toEndOf="@id/generate_video_view"
+        app:layout_constraintTop_toBottomOf="@id/generate_video_view"
+        app:layout_constraintBottom_toTopOf="@id/generate_video_image_btn"
+        app:layout_constraintHorizontal_bias="0"
+        android:orientation="vertical">
+
+
+
+        <RadioButton
+            android:id="@+id/generate_video_default_version_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_version"
+            android:textColor="@color/radio_button_text_colors"
+            android:checked="true"
+            android:button="@drawable/radio_button"
+            android:paddingHorizontal="13dp"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:drawableEnd="@drawable/generate_video_version_infod"
+            android:drawablePadding="15dp"
+            android:maxLength="16"
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/generate_video_briefly_version_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/briefly_version"
+            android:textColor="@color/radio_button_text_colors"
+            android:button="@drawable/radio_button"
+            android:textStyle="italic|bold"
+            android:paddingHorizontal="13dp"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="11dp"
+            android:drawableEnd="@drawable/generate_video_version_infod"
+            android:drawablePadding="15dp"
+            android:maxLength="16"
+            />
+
+    </RadioGroup>
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/generate_video_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        android:src="@drawable/generate_gifd"
+        android:background="@drawable/generate_gifbg"
+        android:padding="11dp"
+        android:importantForAccessibility="no"
+        />
+
+    <ImageView
+        android:id="@+id/generate_video_change_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/generate_video_image_btn"
+        app:layout_constraintTop_toTopOf="@id/generate_video_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/generate_video_image_btn"
+        app:layout_constraintEnd_toEndOf="@id/generate_video_view"
+        android:src="@drawable/generate_video_addd"
+        app:layout_constraintHorizontal_bias="0.79"
+        android:importantForAccessibility="no"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="5dp"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/generate_video_reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/generate_video_image_btn"
+        app:layout_constraintTop_toTopOf="@id/generate_video_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/generate_video_image_btn"
+        app:layout_constraintStart_toStartOf="@id/generate_video_view"
+        android:src="@drawable/generate_reverse_gifd"
+        app:layout_constraintHorizontal_bias="0.21"
+        android:importantForAccessibility="no"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="5dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

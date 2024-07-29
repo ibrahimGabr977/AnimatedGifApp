@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    android:background="@color/darkest_color">
+
+
+
+
+    <ImageView
+        android:id="@+id/post_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/content_description_post_image_view"
+        android:scaleType="fitXY"
+        android:src="@drawable/z_test_post"
+        app:layout_constraintVertical_bias="0"/>
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialogs_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_back"
+        android:focusable="true"
+        android:padding="3dp"
+        android:src="@drawable/z_extra_closed"
+        android:layout_gravity="end"
+        android:layout_weight="0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/poster_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/c_favorite_holder_picturebg"
+        android:contentDescription="@string/content_description_poster_image"
+        android:padding="5dp"
+        android:src="@drawable/z_user_dropfalcon"
+        app:layout_constraintEnd_toEndOf="@id/close"
+        app:layout_constraintStart_toStartOf="@id/close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/download_post"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.152"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="@dimen/set_content_dialog_items_2margin"/>
+
+
+    <ImageView
+        android:id="@+id/download_post"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/a_welcome_skipbg"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_download"
+        android:focusable="true"
+        android:padding="9dp"
+        android:src="@drawable/b_post_holder_downloadd"
+        app:layout_constraintStart_toStartOf="@id/poster_image"
+        app:layout_constraintEnd_toEndOf="@id/poster_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/share_post"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="@dimen/set_content_dialog_items_2margin"
+        />
+
+
+    <ImageView
+        android:id="@+id/share_post"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/a_welcome_skipbg"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_share"
+        android:focusable="true"
+        android:padding="9dp"
+        android:src="@drawable/b_post_holder_shared"
+        app:layout_constraintStart_toStartOf="@id/poster_image"
+        app:layout_constraintEnd_toEndOf="@id/poster_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bookmark_post"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="@dimen/set_content_dialog_items_2margin"
+        />
+
+    <ImageView
+        android:id="@+id/bookmark_post"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/a_welcome_skipbg"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_add_favorite"
+        android:focusable="true"
+        android:src="@drawable/b_post_holder_add_favorited"
+        app:layout_constraintStart_toStartOf="@id/poster_image"
+        app:layout_constraintEnd_toEndOf="@id/poster_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/post_description"
+        android:layout_marginBottom="@dimen/dialogs_margin"
+        app:layout_constraintVertical_bias="1"
+        android:padding="4dp"/>
+
+
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="monospace"
+        android:gravity="start|center_vertical"
+        android:maxLines="3"
+        android:text="#cutie #cat #smile #attractive #beloved #kitten"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        android:shadowColor="@color/blue_light_color"
+        android:shadowDy="5"
+        android:shadowDx="5"
+        android:visibility="visible"
+        android:shadowRadius="1.6"
+        android:lineSpacingExtra="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:background="@color/trans_black"
+        android:paddingHorizontal="@dimen/dialogs_margin"
+        android:paddingTop="@dimen/set_content_dialog_items_margin"
+        android:paddingBottom="@dimen/set_content_dialog_items_2margin"/>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/download_progress"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:max="100"
+        android:progress="50"
+        android:visibility="gone"
+        app:indicatorColor="@color/white_color"
+        app:layout_constraintBottom_toBottomOf="@id/post_view"
+        app:layout_constraintEnd_toEndOf="@id/post_view"
+        app:layout_constraintStart_toStartOf="@id/post_view"
+        app:layout_constraintTop_toTopOf="@id/post_view"
+        app:layout_constraintVertical_bias="1"
+        app:trackColor="#40E0E0E2"
+        android:background="@color/trans_black"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

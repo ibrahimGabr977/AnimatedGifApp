@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/dark_color"
+    app:cardCornerRadius="19dp"
+    app:cardElevation="5dp"
+    android:textDirection="ltr"
+    android:layoutDirection="ltr"
+    tools:viewBindingIgnore="true">
+
+        <ImageView
+            android:id="@+id/favorite_post_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description_post_image_view"
+            android:scaleType="fitXY"
+            android:src="@drawable/z_test_post"
+            android:textDirection="ltr"
+            android:layoutDirection="ltr"
+            tools:viewBindingIgnore="true"/>
+
+
+
+
+</androidx.cardview.widget.CardView>

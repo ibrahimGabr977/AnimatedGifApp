@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+    android:id="@+id/builtin_group"
+    android:checkableBehavior="single">
+
+    <item android:id="@+id/nav_item_library"
+        android:title="@string/nav_library"
+        android:icon="@drawable/nav_item_libraryd"
+        />
+
+    <item android:id="@+id/nav_item_player"
+        android:title="@string/nav_player"
+        android:icon="@drawable/nav_item_playerd"/>
+</group>
+
+
+
+
+    <group android:id="@+id/online_group"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_item_store"
+            android:title="@string/nav_store"
+            android:icon="@drawable/nav_item_stored"/>
+
+        <item android:id="@+id/nav_item_compressor"
+            android:title="@string/nav_compressor"
+            android:icon="@drawable/nav_item_compressord"
+            />
+    </group>
+
+
+
+
+
+
+
+    <group android:id="@+id/help_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_item_review_us"
+            android:title="@string/nav_review_us"
+            android:icon="@drawable/nav_item_reviewd"/>
+
+        <item android:id="@+id/nav_item_help"
+            android:title="@string/nav_help"
+            android:icon="@drawable/nav_item_helpd"/>
+    </group>
+
+
+
+</menu>

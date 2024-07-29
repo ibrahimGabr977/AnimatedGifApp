@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978315933084",
+    "project_id": "gifsme-84cae",
+    "storage_bucket": "gifsme-84cae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978315933084:android:0132e3960214e64e1c8459",
+        "android_client_info": {
+          "package_name": "com.hope.igb.savvy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978315933084-hs8jpqd70k3ei32usn4cgu4k0lpidlnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1F2WiIwZdm2g5n9WD6byno81aelV0Vsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978315933084-hs8jpqd70k3ei32usn4cgu4k0lpidlnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

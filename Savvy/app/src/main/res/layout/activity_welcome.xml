@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.welcome.WelcomeActivity"
+    android:textDirection="ltr"
+    android:layoutDirection="ltr"
+    android:fitsSystemWindows="false"
+    tools:viewBindingIgnore="true"
+    android:background="@color/darker_color">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/welcomeViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/letsGo"
+        />
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.06"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:text="@string/skip"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/a_welcome_skipbg"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="25dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/letsGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/darker_color"
+        android:text="@string/get_started"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/a_welcome_letsgobg"
+        android:paddingVertical="11dp"
+        android:paddingHorizontal="19dp"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.95"
+        android:visibility="invisible"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="@id/letsGo"
+        app:layout_constraintBottom_toBottomOf="@id/letsGo"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintHorizontal_bias="1"
+        android:contentDescription="@string/welcome_content_description_next_page"
+        android:src="@drawable/a_welcome_nextd"
+        android:background="@drawable/a_welcome_nextbg"
+        android:padding="5dp"
+        app:civ_border_overlay="false"
+        app:civ_circle_background_color="@color/white_color"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/pages_indicators_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="@id/letsGo"
+        app:layout_constraintBottom_toBottomOf="@id/letsGo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0"
+        android:paddingVertical="3dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_selected_paged"
+            android:layout_marginEnd="4dp"
+            android:importantForAccessibility="no"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_paged"
+            android:layout_marginEnd="4dp"
+            android:importantForAccessibility="no"/>
+
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_paged"
+            android:layout_marginEnd="4dp"
+            android:importantForAccessibility="no"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_paged"
+            android:importantForAccessibility="no"
+            android:layout_marginEnd="4dp"/>
+
+        <ImageView
+            android:id="@+id/welcome_indicator_page5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_welcome_unselected_paged"
+            android:importantForAccessibility="no"/>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

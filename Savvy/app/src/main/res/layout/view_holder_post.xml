@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="21dp"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    app:cardBackgroundColor="@color/dark_color"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"
+    tools:viewBindingIgnore="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/poster_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="19dp"
+            android:contentDescription="@string/content_description_poster_image"
+            android:padding="3dp"
+            android:src="@drawable/z_user_animalsye"
+            app:civ_circle_background_color="@color/darker_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent="0.129" />
+
+        <TextView
+            android:id="@+id/poster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:text="@string/test_poster_name"
+            android:textColor="@color/white_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/poster_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toEndOf="@id/poster_image"
+            app:layout_constraintTop_toTopOf="@id/poster_image"
+            android:layout_marginTop="3dp" />
+
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="@string/test_post_time"
+            android:textColor="#8CE0E0E2"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/poster_name"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/poster_image"
+            app:layout_constraintTop_toTopOf="@id/poster_name"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/post_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="19dp"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:gravity="start|center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:lines="4"
+            android:minLines="3"
+            android:textColor="@color/white_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="@id/poster_name"
+            app:layout_constraintTop_toBottomOf="@id/poster_name"  />
+
+        <ImageView
+            android:id="@+id/post_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/b_post_background"
+            android:contentDescription="@string/content_description_post_image_view"
+            android:scaleType="fitXY"
+            android:src="@drawable/z_test_post"
+            app:layout_constraintBottom_toTopOf="@id/container5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_description"
+            app:layout_constraintWidth_percent="0.97" />
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/download_post_progress"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#63000000"
+            android:max="100"
+            android:paddingTop="9dp"
+            android:progress="50"
+            android:visibility="gone"
+            app:indicatorColor="@color/white_color"
+            app:layout_constraintBottom_toBottomOf="@id/post_view"
+            app:layout_constraintEnd_toEndOf="@id/post_view"
+            app:layout_constraintStart_toStartOf="@id/post_view"
+            app:layout_constraintTop_toTopOf="@id/post_view"
+            app:layout_constraintVertical_bias="1"
+            app:trackColor="#40E0E0E2" />
+
+
+        <ImageView
+            android:id="@+id/like_post"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_like"
+            android:focusable="true"
+            android:padding="5dp"
+            android:src="@drawable/b_post_holder_unliked"
+            app:layout_constraintBottom_toBottomOf="@id/container5"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideStart"
+            app:layout_constraintTop_toTopOf="@id/container5" />
+
+        <TextView
+            android:id="@+id/likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/b_post_holder_likes_countbg"
+            android:fontFamily="monospace"
+            android:paddingHorizontal="3dp"
+            android:text="@string/_0"
+            android:textColor="#BFE0E0E2"
+            android:textSize="11sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/like_post"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/like_post"
+            app:layout_constraintTop_toTopOf="@id/like_post"
+            app:layout_constraintVertical_bias="1"
+            android:layout_marginStart="-15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/container5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/b_main_itemsbg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+
+            <ImageView
+                android:id="@+id/bookmark_post"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/content_description_add_favorite"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/b_post_holder_remove_favorited" />
+
+
+            <ImageView
+                android:id="@+id/share_post"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/content_description_share"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/b_post_holder_shared" />
+
+            <ImageView
+                android:id="@+id/download_post"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/content_description_download"
+                android:focusable="true"
+                android:padding="3dp"
+                android:src="@drawable/b_post_holder_downloadd" />
+
+            <ImageView
+                android:id="@+id/report_post"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:clickable="true"
+                android:contentDescription="@string/content_description_report"
+                android:focusable="true"
+                android:padding="3dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/b_post_reportd"
+                app:layout_constraintBottom_toBottomOf="@id/poster_image"
+                app:layout_constraintEnd_toEndOf="@id/guideEnd"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/poster_image" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

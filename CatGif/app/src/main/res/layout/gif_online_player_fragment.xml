@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_darker_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+
+
+    <ImageView
+        android:id="@+id/online_player_back_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/store_backd"
+        app:layout_constraintVertical_bias="0.025"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintHorizontal_bias="0.07"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/online_player_back_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/online_player_back_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/online_player_back_image_btn"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="@string/nav_player"
+        android:fontFamily="monospace"
+        app:layout_constraintHorizontal_bias="0.11"/>
+
+
+
+    <ImageView
+        android:id="@+id/online_player_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        android:scaleType="fitXY"
+        />
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/online_player_gif_sign_image"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="@id/online_player_image_view"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/online_player_image_view"-->
+<!--        app:layout_constraintTop_toTopOf="@id/online_player_image_view"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/online_player_image_view"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        android:src="@drawable/z_gif_signd_large"-->
+<!--        android:background="@drawable/z_gif_signbg"-->
+<!--        android:padding="3.5dp"/>-->
+
+
+    <ImageView
+        android:id="@+id/online_player_save_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/online_player_back_image_btn"
+        app:layout_constraintEnd_toEndOf="@id/online_player_back_image_btn"
+        app:layout_constraintTop_toBottomOf="@id/online_player_image_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/gif_player_saved"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="15dp"/>
+
+    <ImageView
+        android:id="@+id/online_player_share_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/online_player_save_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/online_player_save_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/online_player_save_image_btn"
+        android:src="@drawable/gif_player_shared"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintHorizontal_bias="0.061"/>
+
+
+    <TextView
+        android:id="@+id/online_player_like_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/online_player_save_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/online_player_save_image_btn"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:text="1.5K"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:drawableStart="@drawable/gif_player_unliked"
+        android:drawablePadding="5dp"
+        android:paddingVertical="3dp"
+        app:layout_constraintHorizontal_bias="0.91"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <ImageView
+        android:id="@+id/online_player_info_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/online_player_like_text_btn"
+        app:layout_constraintTop_toTopOf="@id/online_player_save_image_btn"
+        app:layout_constraintBottom_toBottomOf="@id/online_player_save_image_btn"
+        android:src="@drawable/gif_player_infod"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintHorizontal_bias="0.939"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

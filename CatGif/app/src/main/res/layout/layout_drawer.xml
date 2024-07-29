@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/nav_drawer_layout"
+    android:layout_gravity="start"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    >
+
+
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/nav_drawer_menu"
+            android:background="@color/main_darker_color"
+            app:itemIconTint="@color/white_color"
+            app:itemTextAppearance="@style/CustomNavTextStyle"
+            app:itemTextColor="@color/white_color"
+            android:paddingVertical="9dp"
+            android:paddingHorizontal="5dp"
+            app:itemIconSize="21dp"
+            app:layout_constraintWidth_percent="0.81"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintHeight_percent="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="start"
+            />
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/nav_image"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:importantForAccessibility="no"
+            app:layout_constraintHeight_percent="0.29"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/nav_view"
+            app:layout_constraintEnd_toEndOf="@id/nav_view"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

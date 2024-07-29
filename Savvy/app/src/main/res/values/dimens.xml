@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialogs_margin">29dp</dimen>
+    <dimen name="set_content_dialog_items_margin">7.5dp</dimen>
+    <dimen name="set_content_dialog_items_2margin">15dp</dimen>
+</resources>

@@ -1,0 +1,205 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darker_color"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    app:cardCornerRadius="9dp"
+    tools:viewBindingIgnore="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darker_color"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:text="@string/report_post_title"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"/>
+
+        <!-- Reporting options -->
+        <RadioGroup
+            android:id="@+id/reportRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <RadioButton
+                android:id="@+id/nudity_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_nudity"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/violence_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_violence"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/hateful_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_hateful"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/harmful_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_harmful"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/spam_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_spam"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/copyright_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_ip"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+            <RadioButton
+                android:id="@+id/other_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white_color"
+                android:text="@string/report_post_other"
+                android:textColor="@color/white_color"
+                android:paddingHorizontal="5dp"/>
+
+        </RadioGroup>
+
+        <!-- Additional information -->
+        <EditText
+            android:id="@+id/additional_info_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/b_post_reporting_additional_infobg"
+            android:gravity="top"
+            android:hint="@string/report_post_additional_info"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="5dp"
+            android:lines="6"
+            android:maxLength="200"
+            android:padding="13dp"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/reportRadioGroup"
+            app:layout_constraintEnd_toEndOf="@id/reportRadioGroup"
+            app:layout_constraintTop_toBottomOf="@id/reportRadioGroup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"/>
+
+        <!-- Character count -->
+        <TextView
+            android:id="@+id/character_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/additional_info_edittext"
+            app:layout_constraintEnd_toEndOf="@id/additional_info_edittext"
+            app:layout_constraintTop_toTopOf="@id/additional_info_edittext"
+            app:layout_constraintBottom_toBottomOf="@id/additional_info_edittext"
+            android:padding="5dp"
+            android:text="@string/report_post_additional_info_character_count"
+            android:textColor="#8F8F8F"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_margin="9dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            />
+
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/additional_info_edittext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/additional_info_edittext"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/reporting_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white_color"
+                android:text="@string/report_post_cancel"
+                android:padding="5dp"
+                android:layout_marginEnd="9dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/reporting_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/gray_color"
+                android:text="@string/report_post_report"
+                android:padding="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:enabled="false"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
